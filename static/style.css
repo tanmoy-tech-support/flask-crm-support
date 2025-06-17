@@ -1,0 +1,26 @@
+body {
+  background-color: #f4f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 40px;
+}
+
+.container {
+  max-width: 720px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+pre {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.alert-success {
+  font-weight: bold;
+}
+
