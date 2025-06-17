@@ -32,6 +32,20 @@ def index():
         return render_template("index.html", success=True, log=log_entry)
 
     return render_template("index.html", success=False)
+    
+@app.route("/tickets")
+def view_tickets():
+    log_dir = os.path.join("output", "logs")
+    all_logs = []
+
+    if os.path.exists(log_dir):
+        for filename in sorted(os.listdir(log_dir)):
+            filepath = os.path.join(log_dir, filename)
+            with open(filepath, "r") as f:
+                content = f.read()
+                all_logs.append((filename, content))
+
+    return render_template("tickets.html", logs=all_logs)
 
 if __name__ == "__main__":
     app.run(debug=True)
