@@ -32,21 +32,24 @@ Edit
    ```bash
    git clone https://github.com/yourusername/crm-support-scripts.git
    cd crm-support-scripts
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install flask
+   python app.py
 
 
-
-python3 -m venv venv
-
-
-
-source venv/bin/activate
-
-
-
-pip install flask
-
-
-python app.py
 Then visit: http://127.0.0.1:5000
+
+
+
+
+
+
+
+
+
+
+
+
 
 
