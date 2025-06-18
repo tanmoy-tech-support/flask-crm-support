@@ -31,10 +31,15 @@ Edit
 1. Clone the repo:
    ```bash
    git clone https://github.com/yourusername/crm-support-scripts.git
+   ```bash
    cd crm-support-scripts
+   ```bash
    python3 -m venv venv
+   ```bash
    source venv/bin/activate
+   ```bash
    pip install flask
+   ```bash
    python app.py
 
 
